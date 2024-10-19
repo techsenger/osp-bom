@@ -1,0 +1,509 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.techsenger.osp-bom</groupId>
+    <artifactId>osp-bom</artifactId>
+    <version>1.0.0</version>
+    <packaging>pom</packaging>
+    <name>Techsenger OSP BOM</name>
+    <description>Techsenger open source project bill of materials</description>
+
+    <licenses>
+        <license>
+            <name>Apache License, Version 2.0, January 2004</name>
+            <url>https://www.apache.org/licenses/LICENSE-2.0</url>
+        </license>
+    </licenses>
+
+    <url>https://github.com/techsenger/osp-bom</url>
+    <issueManagement>
+        <system>GitHub</system>
+        <url>https://github.com/techsenger/osp-bom/issues</url>
+    </issueManagement>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <kit.version>1.8.0</kit.version>
+        <alpha.version>2.4.0</alpha.version>
+        <reposium.version>1.2.0</reposium.version>
+        <jeditermfx.version>1.0.0</jeditermfx.version>
+        <tabshell.version>0.8.0</tabshell.version>
+        <ansi4j.version>1.2.0</ansi4j.version>
+        <javafx.version>22.0.1</javafx.version>
+        <richtextfx.version>0.11.3</richtextfx.version>
+        <atlantafx.version>2.0.1</atlantafx.version>
+        <controlsfx.version>11.1.1</controlsfx.version>
+        <slf4j.version>2.0.9</slf4j.version>
+        <log4j.version>2.21.1</log4j.version>
+        <maven.version>3.8.1</maven.version>
+        <maven.plugin-tools.version>3.6.2</maven.plugin-tools.version>
+        <maven.resolver.version>1.6.2</maven.resolver.version>
+        <plantuml.version>1.2023.13</plantuml.version>
+        <guava.version>29.0-jre</guava.version>
+        <gson.version>2.8.6</gson.version>
+        <jline.version>3.21.0</jline.version>
+        <jansi.version>2.4.0</jansi.version>
+        <jcommander.version>1.78</jcommander.version>
+        <asciitable.version>0.3.2</asciitable.version>
+        <skb-interfaces.version>0.0.1</skb-interfaces.version>
+        <st4.version>4.0.8</st4.version>
+        <jaxb.version>4.0.0</jaxb.version>
+        <glassfish.jaxb.version>4.0.2</glassfish.jaxb.version>
+        <el.version>5.0.1</el.version>
+        <glassfish.el.version>5.0.0-M1</glassfish.el.version>
+        <jpa.version>3.1.0</jpa.version>
+        <hibernate.orm.version>6.4.0.Final</hibernate.orm.version>
+        <junit.platform.version>1.10.2</junit.platform.version>
+        <junit.jupiter.version>5.10.2</junit.jupiter.version>
+        <assertj.version>3.25.3</assertj.version>
+        <mockito.version>5.12.0</mockito.version>
+    </properties>
+
+    <dependencyManagement>
+        <dependencies>
+
+            <!--### KIT ###-->
+            <dependency>
+                <groupId>com.techsenger.kit</groupId>
+                <artifactId>kit-core</artifactId>
+                <version>${kit.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.techsenger.kit</groupId>
+                <artifactId>kit-jpa</artifactId>
+                <version>${kit.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.techsenger.kit</groupId>
+                <artifactId>kit-fx</artifactId>
+                <version>${kit.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.techsenger.kit</groupId>
+                <artifactId>kit-ascii</artifactId>
+                <version>${kit.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.techsenger.kit</groupId>
+                <artifactId>kit-rmi</artifactId>
+                <version>${kit.version}</version>
+            </dependency>
+
+            <!--### ALPHA ###-->
+            <dependency>
+                <groupId>com.techsenger.alpha</groupId>
+                <artifactId>alpha-api</artifactId>
+                <version>${alpha.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.techsenger.alpha</groupId>
+                <artifactId>alpha-spi</artifactId>
+                <version>${alpha.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.techsenger.alpha</groupId>
+                <artifactId>alpha-core</artifactId>
+                <version>${alpha.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.techsenger.alpha.console.gui</groupId>
+                <artifactId>alpha-console-gui-api</artifactId>
+                <version>${alpha.version}</version>
+            </dependency>
+
+            <!--### ANSI4J ###-->
+            <dependency>
+                <groupId>com.techsenger.ansi4j</groupId>
+                <artifactId>ansi4j-core-api</artifactId>
+                <version>${ansi4j.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.techsenger.ansi4j</groupId>
+                <artifactId>ansi4j-core-impl</artifactId>
+                <version>${ansi4j.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.techsenger.ansi4j</groupId>
+                <artifactId>ansi4j-css-api</artifactId>
+                <version>${ansi4j.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.techsenger.ansi4j</groupId>
+                <artifactId>ansi4j-css-impl</artifactId>
+                <version>${ansi4j.version}</version>
+            </dependency>
+
+            <!--### REPOSIUM ###-->
+            <dependency>
+                <groupId>com.techsenger.reposium</groupId>
+                <artifactId>reposium-core-api</artifactId>
+                <version>${reposium.version}</version>
+            </dependency>
+
+            <!--### TABSHELL ###-->
+            <dependency>
+                <groupId>com.techsenger.tabshell.material</groupId>
+                <artifactId>tabshell-material</artifactId>
+                <version>${tabshell.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.techsenger.tabshell.core</groupId>
+                <artifactId>tabshell-core-api</artifactId>
+                <version>${tabshell.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.techsenger.tabshell.kit</groupId>
+                <artifactId>tabshell-kit-base</artifactId>
+                <version>${tabshell.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.techsenger.tabshell.kit</groupId>
+                <artifactId>tabshell-kit-text</artifactId>
+                <version>${tabshell.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.techsenger.tabshell.kit</groupId>
+                <artifactId>tabshell-kit-dialog</artifactId>
+                <version>${tabshell.version}</version>
+            </dependency>
+
+            <!--### JEDITERMFX ###-->
+            <dependency>
+                <groupId>com.techsenger.jeditermfx</groupId>
+                <artifactId>jeditermfx-core</artifactId>
+                <version>${jeditermfx.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.techsenger.jeditermfx</groupId>
+                <artifactId>jeditermfx-ui</artifactId>
+                <version>${jeditermfx.version}</version>
+            </dependency>
+
+            <!--### JAKARTA ###-->
+            <dependency>
+                <groupId>jakarta.xml.bind</groupId>
+                <artifactId>jakarta.xml.bind-api</artifactId>
+                <version>${jaxb.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.glassfish.jaxb</groupId>
+                <artifactId>jaxb-runtime</artifactId>
+                <version>${glassfish.jaxb.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>jakarta.el</groupId>
+                <artifactId>jakarta.el-api</artifactId>
+                <version>${el.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.glassfish</groupId>
+                <artifactId>jakarta.el</artifactId>
+                <version>${glassfish.el.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>jakarta.persistence</groupId>
+                <artifactId>jakarta.persistence-api</artifactId>
+                <version>${jpa.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.hibernate.orm</groupId>
+                <artifactId>hibernate-core</artifactId>
+                <version>${hibernate.orm.version}</version>
+            </dependency>
+
+            <!--### DATA PARSING ###-->
+            <dependency>
+                <groupId>com.google.code.gson</groupId>
+                <artifactId>gson</artifactId>
+                <version>${gson.version}</version>
+            </dependency>
+
+            <!--### TEMPLATES ###-->
+            <dependency>
+                <groupId>org.antlr</groupId>
+                <artifactId>ST4</artifactId>
+                <version>${st4.version}</version>
+            </dependency>
+
+            <!--### JAVAFX ###-->
+            <dependency>
+                <groupId>org.openjfx</groupId>
+                <artifactId>javafx-controls</artifactId>
+                <version>${javafx.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.openjfx</groupId>
+                <artifactId>javafx-base</artifactId>
+                <version>${javafx.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.openjfx</groupId>
+                <artifactId>javafx-fxml</artifactId>
+                <version>${javafx.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.openjfx</groupId>
+                <artifactId>javafx-graphics</artifactId>
+                <version>${javafx.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.openjfx</groupId>
+                <artifactId>javafx-media</artifactId>
+                <version>${javafx.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.openjfx</groupId>
+                <artifactId>javafx-web</artifactId>
+                <version>${javafx.version}</version>
+            </dependency>
+            <!-- we need some swing utils -->
+            <dependency>
+                <groupId>org.openjfx</groupId>
+                <artifactId>javafx-swing</artifactId>
+                <version>${javafx.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.fxmisc.richtext</groupId>
+                <artifactId>richtextfx</artifactId>
+                <version>${richtextfx.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.controlsfx</groupId>
+                <artifactId>controlsfx</artifactId>
+                <version>${controlsfx.version}</version>
+            </dependency>
+            <!-- fx theme library -->
+            <dependency>
+                <groupId>io.github.mkpaz</groupId>
+                <artifactId>atlantafx-base</artifactId>
+                <version>${atlantafx.version}</version>
+            </dependency>
+
+            <!--### MAVEN ###-->
+            <dependency>
+                <groupId>org.apache.maven</groupId>
+                <artifactId>maven-plugin-api</artifactId>
+                <version>${maven.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.maven</groupId>
+                <artifactId>maven-core</artifactId>
+                <version>${maven.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.maven</groupId>
+                <artifactId>maven-resolver-provider</artifactId>
+                <version>${maven.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.maven.plugin-tools</groupId>
+                <artifactId>maven-plugin-annotations</artifactId>
+                <version>${maven.plugin-tools.version}</version>
+            </dependency>
+            <!--
+                Repo. Maven-resolver is the descendant of Eclipse Aether.
+                Aether has been at Eclipse for several years, but the project has never garnered much of a community
+                and the only real consumer of note is the Apache Maven project. So, the project went back to Apache
+                where the Apache Maven.
+            -->
+            <dependency>
+                <groupId>org.apache.maven.resolver</groupId>
+                <artifactId>maven-resolver-api</artifactId>
+                <version>${maven.resolver.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.maven.resolver</groupId>
+                <artifactId>maven-resolver-impl</artifactId>
+                <version>${maven.resolver.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.maven.resolver</groupId>
+                <artifactId>maven-resolver-spi</artifactId>
+                <version>${maven.resolver.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.maven.resolver</groupId>
+                <artifactId>maven-resolver-connector-basic</artifactId>
+                <version>${maven.resolver.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.maven.resolver</groupId>
+                <artifactId>maven-resolver-transport-file</artifactId>
+                <version>${maven.resolver.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.maven.resolver</groupId>
+                <artifactId>maven-resolver-transport-http</artifactId>
+                <version>${maven.resolver.version}</version>
+            </dependency>
+
+            <!--### UML ###-->
+            <dependency>
+                <groupId>net.sourceforge.plantuml</groupId>
+                <!--  Apache Software License 2.0 (ASL) see https://plantuml.com/en/download#asl -->
+                <artifactId>plantuml-asl</artifactId>
+                <version>${plantuml.version}</version>
+            </dependency>
+
+            <!--### COMMON ###-->
+            <dependency>
+                <groupId>com.google.guava</groupId>
+                <artifactId>guava</artifactId>
+                <version>${guava.version}</version>
+            </dependency>
+
+            <!--### CLI ###-->
+            <!-- this package includes all jline submodules -->
+            <dependency>
+                <groupId>org.jline</groupId>
+                <artifactId>jline</artifactId>
+                <version>${jline.version}</version>
+            </dependency>
+            <!-- jline uses jansi, jansi is also needed for logging -->
+            <dependency>
+                <groupId>org.fusesource.jansi</groupId>
+                <artifactId>jansi</artifactId>
+                <version>${jansi.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.beust</groupId>
+                <artifactId>jcommander</artifactId>
+                <version>${jcommander.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>de.vandermeer</groupId>
+                <artifactId>asciitable</artifactId>
+                <version>${asciitable.version}</version>
+                <!-- not compile, there is a problem with char.traslation artifact -->
+                <scope>provided</scope>
+                <!--antlr4 includes ST4 -->
+                <exclusions>
+                    <exclusion>
+                        <groupId>org.antlr</groupId>
+                        <artifactId>ST4</artifactId>
+                    </exclusion>
+                </exclusions>
+            </dependency>
+            <!-- what is skb see here https://github.com/vdmeer/skb -->
+            <dependency>
+                <groupId>de.vandermeer</groupId>
+                <artifactId>skb-interfaces</artifactId>
+                <version>${skb-interfaces.version}</version>
+                <!-- not compile, there is a problem with char.traslation artifact -->
+                <scope>provided</scope>
+                <exclusions>
+                    <exclusion>
+                        <groupId>org.antlr</groupId>
+                        <artifactId>antlr4</artifactId>
+                    </exclusion>
+                </exclusions>
+            </dependency>
+
+            <!--### LOGGING ###-->
+            <dependency>
+                <groupId>org.slf4j</groupId>
+                <artifactId>slf4j-api</artifactId>
+                <version>${slf4j.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.slf4j</groupId>
+                <artifactId>slf4j-jdk14</artifactId>
+                <version>${slf4j.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.slf4j</groupId>
+                <artifactId>slf4j-simple</artifactId>
+                <version>${slf4j.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.logging.log4j</groupId>
+                <artifactId>log4j-api</artifactId>
+                <version>${log4j.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.logging.log4j</groupId>
+                <artifactId>log4j-core</artifactId>
+                <version>${log4j.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.logging.log4j</groupId>
+                <artifactId>log4j-slf4j2-impl</artifactId>
+                <version>${log4j.version}</version>
+                <scope>test</scope>
+            </dependency>
+            <dependency>
+                <!--
+                    To route jul messages to log4j (without sending them to SLF4J bridge) use log4j-jul
+                    and -Djava.util.logging.manager=org.apache.logging.log4j.jul.LogManager . For details see
+                    http://logging.apache.org/log4j/2.x/faq.html#which_jars
+                -->
+                <groupId>org.apache.logging.log4j</groupId>
+                <artifactId>log4j-jul</artifactId>
+                <version>${log4j.version}</version>
+                <scope>test</scope>
+            </dependency>
+            <dependency>
+                <!-- to route Apache Commons Logging (JCL) to log4j  -->
+                <groupId>org.apache.logging.log4j</groupId>
+                <artifactId>log4j-jcl</artifactId>
+                <version>${log4j.version}</version>
+                <scope>test</scope>
+            </dependency>
+
+            <!--### JUNIT ###-->
+            <dependency>
+                <groupId>org.junit.platform</groupId>
+                <artifactId>junit-platform-runner</artifactId>
+                <version>${junit.platform.version}</version>
+                <scope>test</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.junit.platform</groupId>
+                <artifactId>junit-platform-launcher</artifactId>
+                <version>${junit.platform.version}</version>
+                <scope>test</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.junit.platform</groupId>
+                <artifactId>junit-platform-engine</artifactId>
+                <version>${junit.platform.version}</version>
+                <scope>test</scope>
+            </dependency>
+            <!-- Note: to run Focused method (right click) in NB add junit-jupiter-engine dependency to project -->
+            <dependency>
+                <groupId>org.junit.jupiter</groupId>
+                <artifactId>junit-jupiter-engine</artifactId>
+                <version>${junit.jupiter.version}</version>
+                <scope>test</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.junit.jupiter</groupId>
+                <artifactId>junit-jupiter-api</artifactId>
+                <version>${junit.jupiter.version}</version>
+                <scope>test</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.junit.jupiter</groupId>
+                <artifactId>junit-jupiter-params</artifactId>
+                <version>${junit.jupiter.version}</version>
+                <scope>test</scope>
+            </dependency>
+
+            <!--### ASSERTJ ###-->
+            <dependency>
+                <groupId>org.assertj</groupId>
+                <artifactId>assertj-core</artifactId>
+                <version>${assertj.version}</version>
+                <scope>test</scope>
+            </dependency>
+
+            <!--### MOCKITO ###-->
+            <dependency>
+                <groupId>org.mockito</groupId>
+                <artifactId>mockito-core</artifactId>
+                <version>${mockito.version}</version>
+                <scope>test</scope>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+</project>
