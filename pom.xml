@@ -23,7 +23,7 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <kit.version>1.8.0</kit.version>
+        <toolkit.version>1.8.0</toolkit.version>
         <alpha.version>2.4.0</alpha.version>
         <reposium.version>1.2.0</reposium.version>
         <jeditermfx.version>1.0.0</jeditermfx.version>
@@ -62,31 +62,31 @@
     <dependencyManagement>
         <dependencies>
 
-            <!--### KIT ###-->
+            <!--### TOOLKIT ###-->
             <dependency>
-                <groupId>com.techsenger.kit</groupId>
-                <artifactId>kit-core</artifactId>
-                <version>${kit.version}</version>
+                <groupId>com.techsenger.toolkit</groupId>
+                <artifactId>toolkit-core</artifactId>
+                <version>${toolkit.version}</version>
             </dependency>
             <dependency>
-                <groupId>com.techsenger.kit</groupId>
-                <artifactId>kit-jpa</artifactId>
-                <version>${kit.version}</version>
+                <groupId>com.techsenger.toolkit</groupId>
+                <artifactId>toolkit-jpa</artifactId>
+                <version>${toolkit.version}</version>
             </dependency>
             <dependency>
-                <groupId>com.techsenger.kit</groupId>
-                <artifactId>kit-fx</artifactId>
-                <version>${kit.version}</version>
+                <groupId>com.techsenger.toolkit</groupId>
+                <artifactId>toolkit-fx</artifactId>
+                <version>${toolkit.version}</version>
             </dependency>
             <dependency>
-                <groupId>com.techsenger.kit</groupId>
-                <artifactId>kit-ascii</artifactId>
-                <version>${kit.version}</version>
+                <groupId>com.techsenger.toolkit</groupId>
+                <artifactId>toolkit-ascii</artifactId>
+                <version>${toolkit.version}</version>
             </dependency>
             <dependency>
-                <groupId>com.techsenger.kit</groupId>
-                <artifactId>kit-rmi</artifactId>
-                <version>${kit.version}</version>
+                <groupId>com.techsenger.toolkit</groupId>
+                <artifactId>toolkit-rmi</artifactId>
+                <version>${toolkit.version}</version>
             </dependency>
 
             <!--### ALPHA ###-->
