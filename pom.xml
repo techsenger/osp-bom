@@ -9,7 +9,7 @@
 
     <groupId>com.techsenger.osp-bom</groupId>
     <artifactId>osp-bom</artifactId>
-    <version>1.0.0</version>
+    <version>1.1.0</version>
     <packaging>pom</packaging>
     <name>Techsenger OSP BOM</name>
     <description>Techsenger open source project bill of materials</description>
@@ -437,16 +437,6 @@
                 <version>${slf4j.version}</version>
             </dependency>
             <dependency>
-                <groupId>org.slf4j</groupId>
-                <artifactId>slf4j-jdk14</artifactId>
-                <version>${slf4j.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.slf4j</groupId>
-                <artifactId>slf4j-simple</artifactId>
-                <version>${slf4j.version}</version>
-            </dependency>
-            <dependency>
                 <groupId>org.apache.logging.log4j</groupId>
                 <artifactId>log4j-api</artifactId>
                 <version>${log4j.version}</version>
@@ -456,14 +446,14 @@
                 <artifactId>log4j-core</artifactId>
                 <version>${log4j.version}</version>
             </dependency>
+            <!-- To route SLF4j to Log4j  -->
             <dependency>
                 <groupId>org.apache.logging.log4j</groupId>
                 <artifactId>log4j-slf4j2-impl</artifactId>
                 <version>${log4j.version}</version>
-                <scope>test</scope>
             </dependency>
             <!--
-                To route jul messages to log4j (without sending them to SLF4J bridge) use log4j-jul
+                To route JUL to Log4j (without sending them to SLF4J bridge) use log4j-jul
                 and -Djava.util.logging.manager=org.apache.logging.log4j.jul.LogManager . For details see
                 http://logging.apache.org/log4j/2.x/faq.html#which_jars
             -->
@@ -471,14 +461,12 @@
                 <groupId>org.apache.logging.log4j</groupId>
                 <artifactId>log4j-jul</artifactId>
                 <version>${log4j.version}</version>
-                <scope>test</scope>
             </dependency>
-            <!-- to route Apache Commons Logging (JCL) to log4j  -->
+            <!-- To route Apache Commons Logging (JCL) to Log4j  -->
             <dependency>
                 <groupId>org.apache.logging.log4j</groupId>
                 <artifactId>log4j-jcl</artifactId>
                 <version>${log4j.version}</version>
-                <scope>test</scope>
             </dependency>
 
             <!--### JUNIT ###-->
