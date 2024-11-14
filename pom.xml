@@ -4,14 +4,14 @@
     <parent>
         <groupId>com.techsenger.maven-root</groupId>
         <artifactId>maven-root</artifactId>
-        <version>1.0.0</version>
+        <version>1.1.0</version>
     </parent>
 
     <groupId>com.techsenger.osp-bom</groupId>
     <artifactId>osp-bom</artifactId>
     <version>1.1.0</version>
     <packaging>pom</packaging>
-    <name>Techsenger OSP BOM</name>
+    <name>OSP BOM</name>
     <description>Techsenger open source project bill of materials</description>
 
     <licenses>
@@ -24,9 +24,9 @@
     <url>https://github.com/techsenger/osp-bom</url>
 
     <scm>
-        <url>https://github.com/techsenger/osp-bom.git</url>
         <connection>scm:git:https://github.com/techsenger/osp-bom.git</connection>
         <developerConnection>scm:git:https://github.com/techsenger/osp-bom.git</developerConnection>
+        <url>https://github.com/techsenger/osp-bom</url>
     </scm>
 
     <issueManagement>
@@ -48,10 +48,11 @@
         <reposium.version>1.2.0</reposium.version>
         <jeditermfx.version>1.0.0</jeditermfx.version>
         <tabshell.version>0.8.0</tabshell.version>
-        <ansi4j.version>1.2.0</ansi4j.version>
+        <ansi4j.version>2.0.0</ansi4j.version>
         <javafx.version>22.0.1</javafx.version>
         <richtextfx.version>0.11.3</richtextfx.version>
         <atlantafx.version>2.0.1</atlantafx.version>
+        <ikonli.version>12.3.1</ikonli.version>
         <controlsfx.version>11.1.1</controlsfx.version>
         <slf4j.version>2.0.9</slf4j.version>
         <log4j.version>2.21.1</log4j.version>
@@ -303,6 +304,17 @@
                 <groupId>io.github.mkpaz</groupId>
                 <artifactId>atlantafx-base</artifactId>
                 <version>${atlantafx.version}</version>
+            </dependency>
+            <!-- icons -->
+            <dependency>
+                <groupId>org.kordamp.ikonli</groupId>
+                <artifactId>ikonli-javafx</artifactId>
+                <version>${ikonli.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.kordamp.ikonli</groupId>
+                <artifactId>ikonli-materialdesign2-pack</artifactId>
+                <version>${ikonli.version}</version>
             </dependency>
 
             <!--### MAVEN ###-->
