@@ -141,17 +141,7 @@
             </dependency>
             <dependency>
                 <groupId>com.techsenger.ansi4j</groupId>
-                <artifactId>ansi4j-core-impl</artifactId>
-                <version>${ansi4j.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.techsenger.ansi4j</groupId>
                 <artifactId>ansi4j-css-api</artifactId>
-                <version>${ansi4j.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.techsenger.ansi4j</groupId>
-                <artifactId>ansi4j-css-impl</artifactId>
                 <version>${ansi4j.version}</version>
             </dependency>
 
