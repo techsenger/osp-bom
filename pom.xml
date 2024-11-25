@@ -9,7 +9,7 @@
 
     <groupId>com.techsenger.osp-bom</groupId>
     <artifactId>osp-bom</artifactId>
-    <version>1.1.1</version>
+    <version>1.1.1-SNAPSHOT</version>
     <packaging>pom</packaging>
     <name>OSP BOM</name>
     <description>Techsenger open source project bill of materials</description>
