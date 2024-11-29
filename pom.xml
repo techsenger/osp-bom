@@ -123,11 +123,6 @@
                 <version>${alpha.version}</version>
             </dependency>
             <dependency>
-                <groupId>com.techsenger.alpha</groupId>
-                <artifactId>alpha-core</artifactId>
-                <version>${alpha.version}</version>
-            </dependency>
-            <dependency>
                 <groupId>com.techsenger.alpha.console.gui</groupId>
                 <artifactId>alpha-console-gui-api</artifactId>
                 <version>${alpha.version}</version>
