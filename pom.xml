@@ -4,12 +4,12 @@
     <parent>
         <groupId>com.techsenger.maven-root</groupId>
         <artifactId>maven-root</artifactId>
-        <version>1.1.0</version>
+        <version>1.2.0</version>
     </parent>
 
     <groupId>com.techsenger.osp-bom</groupId>
     <artifactId>osp-bom</artifactId>
-    <version>1.1.1-SNAPSHOT</version>
+    <version>1.2.0</version>
     <packaging>pom</packaging>
     <name>OSP BOM</name>
     <description>Techsenger open source project bill of materials</description>
@@ -71,8 +71,7 @@
         <st4.version>4.0.8</st4.version>
         <jaxb.version>4.0.0</jaxb.version>
         <glassfish.jaxb.version>4.0.2</glassfish.jaxb.version>
-        <el.version>5.0.1</el.version>
-        <glassfish.el.version>5.0.0-M1</glassfish.el.version>
+        <el.version>5.0.0</el.version>
         <jpa.version>3.1.0</jpa.version>
         <hibernate.orm.version>6.4.0.Final</hibernate.orm.version>
         <junit.platform.version>1.10.2</junit.platform.version>
@@ -208,9 +207,9 @@
                 <version>${el.version}</version>
             </dependency>
             <dependency>
-                <groupId>org.glassfish</groupId>
-                <artifactId>jakarta.el</artifactId>
-                <version>${glassfish.el.version}</version>
+                <groupId>org.glassfish.expressly</groupId>
+                <artifactId>expressly</artifactId>
+                <version>${el.version}</version>
             </dependency>
             <dependency>
                 <groupId>jakarta.persistence</groupId>
