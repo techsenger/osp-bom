@@ -47,8 +47,8 @@
         <alpha.version>2.4.0</alpha.version>
         <reposium.version>1.2.0</reposium.version>
         <jeditermfx.version>1.0.0</jeditermfx.version>
-        <tabshell.version>0.8.0</tabshell.version>
         <ansi4j.version>2.0.0</ansi4j.version>
+        <tabshell.version>0.8.0</tabshell.version>
         <javafx.version>23.0.1</javafx.version>
         <richtextfx.version>0.11.4</richtextfx.version>
         <atlantafx.version>2.0.1</atlantafx.version>
