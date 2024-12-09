@@ -49,6 +49,7 @@
         <jeditermfx.version>1.0.0</jeditermfx.version>
         <ansi4j.version>2.0.0</ansi4j.version>
         <tabshell.version>0.8.0</tabshell.version>
+        <mvvm4fx.version>1.0.0</mvvm4fx.version>
         <javafx.version>23.0.1</javafx.version>
         <richtextfx.version>0.11.4</richtextfx.version>
         <atlantafx.version>2.0.1</atlantafx.version>
@@ -154,6 +155,13 @@
                 <groupId>com.techsenger.reposium</groupId>
                 <artifactId>reposium-core-api</artifactId>
                 <version>${reposium.version}</version>
+            </dependency>
+
+            <!--### MVVM4FX ###-->
+            <dependency>
+                <groupId>com.techsenger.mvvm4fx</groupId>
+                <artifactId>mvvm4fx-core</artifactId>
+                <version>${mvvm4fx.version}</version>
             </dependency>
 
             <!--### TABSHELL ###-->
