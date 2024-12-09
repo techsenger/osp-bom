@@ -57,7 +57,7 @@
         <controlsfx.version>11.1.1</controlsfx.version>
         <slf4j.version>2.0.9</slf4j.version>
         <log4j.version>2.21.1</log4j.version>
-        <maven.version>3.8.1</maven.version>
+        <mvn.version>3.8.1</mvn.version>
         <maven.plugin-tools.version>3.6.2</maven.plugin-tools.version>
         <maven.resolver.version>1.6.2</maven.resolver.version>
         <plantuml.version>1.2023.13</plantuml.version>
@@ -323,17 +323,17 @@
             <dependency>
                 <groupId>org.apache.maven</groupId>
                 <artifactId>maven-plugin-api</artifactId>
-                <version>${maven.version}</version>
+                <version>${mvn.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.apache.maven</groupId>
                 <artifactId>maven-core</artifactId>
-                <version>${maven.version}</version>
+                <version>${mvn.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.apache.maven</groupId>
                 <artifactId>maven-resolver-provider</artifactId>
-                <version>${maven.version}</version>
+                <version>${mvn.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.apache.maven.plugin-tools</groupId>
