@@ -4,12 +4,12 @@
     <parent>
         <groupId>com.techsenger.maven-root</groupId>
         <artifactId>maven-root</artifactId>
-        <version>1.3.0</version>
+        <version>1.4.0</version>
     </parent>
 
     <groupId>com.techsenger.osp-bom</groupId>
     <artifactId>osp-bom</artifactId>
-    <version>1.3.0-SNAPSHOT</version>
+    <version>1.3.0</version>
     <packaging>pom</packaging>
     <name>OSP BOM</name>
     <description>Techsenger open source project bill of materials</description>
@@ -36,21 +36,24 @@
 
     <developers>
         <developer>
-            <id>pavel-castornii</id>
+            <id>pcastornii</id>
             <name>Pavel Castornii</name>
         </developer>
     </developers>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <toolkit.version>1.8.0</toolkit.version>
-        <alpha.version>2.4.0</alpha.version>
-        <reposium.version>1.2.0</reposium.version>
+
+        <toolkit.version>1.0.0</toolkit.version>
         <jeditermfx.version>1.0.0</jeditermfx.version>
         <ansi4j.version>2.0.0</ansi4j.version>
-        <tabshell.version>0.8.0</tabshell.version>
+        <stagepro.version>1.0.0</stagepro.version>
+        <reposium.version>1.0.0</reposium.version>
         <mvvm4fx.version>1.0.0</mvvm4fx.version>
-        <javafx.version>22.0.2</javafx.version>
+        <tabshell.version>1.0.0</tabshell.version>
+        <alpha.version>1.0.0</alpha.version>
+
+        <javafx.version>19.0.2.1</javafx.version>
         <richtextfx.version>0.11.4</richtextfx.version>
         <atlantafx.version>2.0.1</atlantafx.version>
         <ikonli.version>12.3.1</ikonli.version>
@@ -60,12 +63,12 @@
         <mvn.version>3.8.1</mvn.version>
         <maven.plugin-tools.version>3.6.2</maven.plugin-tools.version>
         <maven.resolver.version>1.6.2</maven.resolver.version>
-        <plantuml.version>1.2024.8</plantuml.version>
-        <guava.version>29.0-jre</guava.version>
+        <plantuml.version>1.2025.0</plantuml.version>
+        <guava.version>33.4.0-jre</guava.version>
         <findbugs.version>3.0.2</findbugs.version>
-        <gson.version>2.8.6</gson.version>
+        <gson.version>2.12.1</gson.version>
         <jline.version>3.21.0</jline.version>
-        <jansi.version>2.4.0</jansi.version>
+        <jansi.version>2.4.1</jansi.version>
         <jcommander.version>1.78</jcommander.version>
         <asciitable.version>0.3.2</asciitable.version>
         <skb-interfaces.version>0.0.1</skb-interfaces.version>
@@ -123,8 +126,8 @@
                 <version>${alpha.version}</version>
             </dependency>
             <dependency>
-                <groupId>com.techsenger.alpha.console.gui</groupId>
-                <artifactId>alpha-console-gui-api</artifactId>
+                <groupId>com.techsenger.alpha.console</groupId>
+                <artifactId>alpha-console-gui</artifactId>
                 <version>${alpha.version}</version>
             </dependency>
 
@@ -153,8 +156,15 @@
             <!--### REPOSIUM ###-->
             <dependency>
                 <groupId>com.techsenger.reposium</groupId>
-                <artifactId>reposium-core-api</artifactId>
+                <artifactId>reposium-core</artifactId>
                 <version>${reposium.version}</version>
+            </dependency>
+
+            <!--### STAGEPRO ###-->
+            <dependency>
+                <groupId>com.techsenger.stagepro</groupId>
+                <artifactId>stagepro-core</artifactId>
+                <version>${stagepro.version}</version>
             </dependency>
 
             <!--### MVVM4FX ###-->
@@ -176,13 +186,18 @@
                 <version>${tabshell.version}</version>
             </dependency>
             <dependency>
-                <groupId>com.techsenger.tabshell.core</groupId>
-                <artifactId>tabshell-core-api</artifactId>
+                <groupId>com.techsenger.tabshell</groupId>
+                <artifactId>tabshell-core</artifactId>
                 <version>${tabshell.version}</version>
             </dependency>
             <dependency>
                 <groupId>com.techsenger.tabshell.kit</groupId>
-                <artifactId>tabshell-kit-base</artifactId>
+                <artifactId>tabshell-kit-material</artifactId>
+                <version>${tabshell.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.techsenger.tabshell.kit</groupId>
+                <artifactId>tabshell-kit-core</artifactId>
                 <version>${tabshell.version}</version>
             </dependency>
             <dependency>
@@ -263,11 +278,6 @@
             <dependency>
                 <groupId>org.openjfx</groupId>
                 <artifactId>javafx-base</artifactId>
-                <version>${javafx.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.openjfx</groupId>
-                <artifactId>javafx-fxml</artifactId>
                 <version>${javafx.version}</version>
             </dependency>
             <dependency>
