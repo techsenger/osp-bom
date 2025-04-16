@@ -9,7 +9,7 @@
 
     <groupId>com.techsenger.osp-bom</groupId>
     <artifactId>osp-bom</artifactId>
-    <version>1.5.0</version>
+    <version>1.6.0</version>
     <packaging>pom</packaging>
     <name>OSP BOM</name>
     <description>Techsenger open source project bill of materials</description>
@@ -44,17 +44,18 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
-        <toolkit.version>1.0.0</toolkit.version>
+        <toolkit.version>1.1.0</toolkit.version>
         <jeditermfx.version>1.1.0</jeditermfx.version>
         <ansi4j.version>2.0.0</ansi4j.version>
-        <stagepro.version>1.0.0</stagepro.version>
+        <stagepro.version>1.1.0</stagepro.version>
         <reposium.version>1.0.0</reposium.version>
         <mvvm4fx.version>1.0.0</mvvm4fx.version>
-        <tabshell.version>1.0.0</tabshell.version>
+        <tabshell.version>2.0.0</tabshell.version>
         <alpha.version>1.0.0</alpha.version>
 
         <javafx.version>19.0.2.1</javafx.version>
-        <richtextfx.version>0.11.4</richtextfx.version>
+        <richtextfx.version>0.11.5</richtextfx.version>
+        <flowless.version>0.7.4</flowless.version>
         <atlantafx.version>2.0.1</atlantafx.version>
         <ikonli.version>12.3.1</ikonli.version>
         <controlsfx.version>11.1.1</controlsfx.version>
@@ -68,6 +69,7 @@
         <findbugs.version>3.0.2</findbugs.version>
         <gson.version>2.12.1</gson.version>
         <jline.version>3.21.0</jline.version>
+        <jna.version>5.17.0</jna.version>
         <jansi.version>2.4.1</jansi.version>
         <jcommander.version>1.78</jcommander.version>
         <asciitable.version>0.3.2</asciitable.version>
@@ -186,28 +188,43 @@
                 <version>${tabshell.version}</version>
             </dependency>
             <dependency>
-                <groupId>com.techsenger.tabshell.kit</groupId>
-                <artifactId>tabshell-kit-material</artifactId>
+                <groupId>com.techsenger.tabshell</groupId>
+                <artifactId>tabshell-tabs</artifactId>
                 <version>${tabshell.version}</version>
             </dependency>
             <dependency>
-                <groupId>com.techsenger.tabshell.kit</groupId>
-                <artifactId>tabshell-kit-core</artifactId>
+                <groupId>com.techsenger.tabshell</groupId>
+                <artifactId>tabshell-storage</artifactId>
                 <version>${tabshell.version}</version>
             </dependency>
             <dependency>
-                <groupId>com.techsenger.tabshell.kit</groupId>
-                <artifactId>tabshell-kit-text</artifactId>
+                <groupId>com.techsenger.tabshell</groupId>
+                <artifactId>tabshell-dialogs</artifactId>
                 <version>${tabshell.version}</version>
             </dependency>
             <dependency>
-                <groupId>com.techsenger.tabshell.kit</groupId>
-                <artifactId>tabshell-kit-dialog</artifactId>
+                <groupId>com.techsenger.tabshell</groupId>
+                <artifactId>tabshell-text</artifactId>
                 <version>${tabshell.version}</version>
             </dependency>
             <dependency>
-                <groupId>com.techsenger.tabshell.kit</groupId>
-                <artifactId>tabshell-kit-terminal</artifactId>
+                <groupId>com.techsenger.tabshell</groupId>
+                <artifactId>tabshell-hex</artifactId>
+                <version>${tabshell.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.techsenger.tabshell</groupId>
+                <artifactId>tabshell-terminal</artifactId>
+                <version>${tabshell.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.techsenger.tabshell</groupId>
+                <artifactId>tabshell-registrars</artifactId>
+                <version>${tabshell.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.techsenger.tabshell</groupId>
+                <artifactId>tabshell-icons</artifactId>
                 <version>${tabshell.version}</version>
             </dependency>
 
@@ -300,6 +317,11 @@
                 <groupId>org.openjfx</groupId>
                 <artifactId>javafx-swing</artifactId>
                 <version>${javafx.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.fxmisc.flowless</groupId>
+                <artifactId>flowless</artifactId>
+                <version>${flowless.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.fxmisc.richtext</groupId>
@@ -452,6 +474,18 @@
                         <artifactId>antlr4</artifactId>
                     </exclusion>
                 </exclusions>
+            </dependency>
+
+            <!--### NATIVE ###-->
+            <dependency>
+                <groupId>net.java.dev.jna</groupId>
+                <artifactId>jna</artifactId>
+                <version>${jna.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>net.java.dev.jna</groupId>
+                <artifactId>jna-platform</artifactId>
+                <version>${jna.version}</version>
             </dependency>
 
             <!--### LOGGING ###-->
