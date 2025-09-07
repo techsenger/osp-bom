@@ -44,14 +44,16 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
-        <toolkit.version>1.1.0</toolkit.version>
-        <jeditermfx.version>1.1.0</jeditermfx.version>
+        <annotations.version>1.0.0-SNAPSHOT</annotations.version>
+        <toolkit.version>1.2.0-SNAPSHOT</toolkit.version>
+        <jeditermfx.version>1.2.0-SNAPSHOT</jeditermfx.version>
         <ansi4j.version>2.0.0</ansi4j.version>
         <stagepro.version>1.1.0</stagepro.version>
+        <tabpanepro.version>1.0.0-SNAPSHOT</tabpanepro.version>
         <reposium.version>1.0.0</reposium.version>
-        <mvvm4fx.version>1.0.0</mvvm4fx.version>
+        <mvvm4fx.version>1.1.0-SNAPSHOT</mvvm4fx.version>
         <tabshell.version>2.0.0</tabshell.version>
-        <alpha.version>1.0.0</alpha.version>
+        <alpha.version>1.0.0-SNAPSHOT</alpha.version>
 
         <javafx.version>19.0.2.1</javafx.version>
         <richtextfx.version>0.11.5</richtextfx.version>
@@ -86,10 +88,36 @@
         <mockito.version>5.12.0</mockito.version>
     </properties>
 
+    <repositories>
+        <repository>
+            <id>repsy-snapshots</id>
+            <url>https://repo.repsy.io/mvn/techsenger/snapshots</url>
+            <releases>
+                <enabled>false</enabled>
+            </releases>
+            <snapshots>
+                <enabled>true</enabled>
+                <updatePolicy>always</updatePolicy>
+            </snapshots>
+        </repository>
+    </repositories>
+
     <dependencyManagement>
         <dependencies>
 
+            <!--### ANNOTATIONS ###-->
+            <dependency>
+                <groupId>com.techsenger.annotations</groupId>
+                <artifactId>annotations</artifactId>
+                <version>${annotations.version}</version>
+            </dependency>
+
             <!--### TOOLKIT ###-->
+            <dependency>
+                <groupId>com.techsenger.toolkit</groupId>
+                <artifactId>toolkit-annotations</artifactId>
+                <version>${toolkit.version}</version>
+            </dependency>
             <dependency>
                 <groupId>com.techsenger.toolkit</groupId>
                 <artifactId>toolkit-core</artifactId>
@@ -169,6 +197,13 @@
                 <version>${stagepro.version}</version>
             </dependency>
 
+            <!--### TABPANEPRO ###-->
+            <dependency>
+                <groupId>com.techsenger.tabpanepro</groupId>
+                <artifactId>tabpanepro-core</artifactId>
+                <version>${tabpanepro.version}</version>
+            </dependency>
+
             <!--### MVVM4FX ###-->
             <dependency>
                 <groupId>com.techsenger.mvvm4fx</groupId>
@@ -189,7 +224,12 @@
             </dependency>
             <dependency>
                 <groupId>com.techsenger.tabshell</groupId>
-                <artifactId>tabshell-tabs</artifactId>
+                <artifactId>tabshell-layout</artifactId>
+                <version>${tabshell.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.techsenger.tabshell</groupId>
+                <artifactId>tabshell-shared</artifactId>
                 <version>${tabshell.version}</version>
             </dependency>
             <dependency>
