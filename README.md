@@ -1,2 +1,2 @@
 # osp-bom
-Techsenger open source project bill of materials
+Techsenger open source projects bill of materials
