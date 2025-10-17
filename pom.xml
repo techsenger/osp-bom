@@ -82,7 +82,6 @@
         <el.version>5.0.0</el.version>
         <jpa.version>3.1.0</jpa.version>
         <hibernate.orm.version>6.4.0.Final</hibernate.orm.version>
-        <commons.io.version>2.20.0</commons.io.version>
         <junit.platform.version>1.10.2</junit.platform.version>
         <junit.jupiter.version>5.10.2</junit.jupiter.version>
         <assertj.version>3.25.3</assertj.version>
@@ -468,11 +467,6 @@
                 <groupId>com.google.code.findbugs</groupId>
                 <artifactId>jsr305</artifactId>
                 <version>${findbugs.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>commons-io</groupId>
-                <artifactId>commons-io</artifactId>
-                <version>${commons.io.version}</version>
             </dependency>
 
             <!--### CLI ###-->
