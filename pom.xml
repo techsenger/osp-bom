@@ -59,6 +59,7 @@
         <richtextfx.version>0.11.5</richtextfx.version>
         <flowless.version>0.7.4</flowless.version>
         <atlantafx.version>2.1.0</atlantafx.version>
+        <devtoolsfx.version>1.0.1</devtoolsfx.version>
         <ikonli.version>12.3.1</ikonli.version>
         <controlsfx.version>11.1.1</controlsfx.version>
         <slf4j.version>2.0.9</slf4j.version>
@@ -372,6 +373,11 @@
                 <groupId>org.controlsfx</groupId>
                 <artifactId>controlsfx</artifactId>
                 <version>${controlsfx.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.github.mkpaz</groupId>
+                <artifactId>devtoolsfx-connector</artifactId>
+                <version>${devtoolsfx.version}</version>
             </dependency>
             <!-- fx theme library -->
             <dependency>
