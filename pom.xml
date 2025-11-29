@@ -56,7 +56,7 @@
         <alpha.version>1.0.0-SNAPSHOT</alpha.version>
 
         <javafx.version>19.0.2.1</javafx.version>
-        <richtextfx.version>0.11.5</richtextfx.version>
+        <richtextfx.version>0.11.7</richtextfx.version>
         <flowless.version>0.7.4</flowless.version>
         <atlantafx.version>2.1.0</atlantafx.version>
         <devtoolsfx.version>1.0.1</devtoolsfx.version>
