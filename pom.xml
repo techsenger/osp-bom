@@ -69,6 +69,7 @@
         <maven.resolver.version>1.6.2</maven.resolver.version>
         <plantuml.version>1.2025.0</plantuml.version>
         <guava.version>33.4.0-jre</guava.version>
+        <commons.validator.version>1.10.1</commons.validator.version>
         <findbugs.version>3.0.2</findbugs.version>
         <gson.version>2.12.1</gson.version>
         <jline.version>3.21.0</jline.version>
@@ -473,6 +474,11 @@
                 <groupId>com.google.code.findbugs</groupId>
                 <artifactId>jsr305</artifactId>
                 <version>${findbugs.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>commons-validator</groupId>
+                <artifactId>commons-validator</artifactId>
+                <version>${commons.validator.version}</version>
             </dependency>
 
             <!--### CLI ###-->
