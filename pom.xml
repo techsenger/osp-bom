@@ -9,7 +9,7 @@
 
     <groupId>com.techsenger.osp.bom</groupId>
     <artifactId>osp-bom</artifactId>
-    <version>1.7.0</version>
+    <version>1.8.0-SNAPSHOT</version>
     <packaging>pom</packaging>
     <name>OSP BOM</name>
     <description>Techsenger open source projects bill of materials</description>
@@ -44,20 +44,22 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
-        <toolkit.version>1.1.0</toolkit.version>
-        <jeditermfx.version>1.1.0</jeditermfx.version>
+        <annotations.version>1.0.0-SNAPSHOT</annotations.version>
+        <toolkit.version>1.2.0-SNAPSHOT</toolkit.version>
+        <jeditermfx.version>1.2.0-SNAPSHOT</jeditermfx.version>
         <ansi4j.version>2.0.0</ansi4j.version>
         <stagepro.version>1.1.0</stagepro.version>
-        <reposium.version>1.0.0</reposium.version>
-        <mvvm4fx.version>1.0.0</mvvm4fx.version>
-        <tabshell.version>2.0.0</tabshell.version>
-        <alpha.version>1.0.0</alpha.version>
         <tabpanepro.version>1.0.0</tabpanepro.version>
+        <reposium.version>1.0.0</reposium.version>
+        <patternfx.version>2.0.0-SNAPSHOT</patternfx.version>
+        <tabshell.version>2.0.0-SNAPSHOT</tabshell.version>
+        <alpha.version>1.0.0-SNAPSHOT</alpha.version>
 
         <javafx.version>19.0.2.1</javafx.version>
-        <richtextfx.version>0.11.5</richtextfx.version>
+        <richtextfx.version>0.11.7</richtextfx.version>
         <flowless.version>0.7.4</flowless.version>
-        <atlantafx.version>2.0.1</atlantafx.version>
+        <atlantafx.version>2.1.0</atlantafx.version>
+        <devtoolsfx.version>1.0.1</devtoolsfx.version>
         <ikonli.version>12.3.1</ikonli.version>
         <controlsfx.version>11.1.1</controlsfx.version>
         <slf4j.version>2.0.9</slf4j.version>
@@ -67,6 +69,7 @@
         <maven.resolver.version>1.6.2</maven.resolver.version>
         <plantuml.version>1.2025.0</plantuml.version>
         <guava.version>33.4.0-jre</guava.version>
+        <commons.validator.version>1.10.1</commons.validator.version>
         <findbugs.version>3.0.2</findbugs.version>
         <gson.version>2.12.1</gson.version>
         <jline.version>3.21.0</jline.version>
@@ -87,10 +90,36 @@
         <mockito.version>5.12.0</mockito.version>
     </properties>
 
+    <repositories>
+        <repository>
+            <id>repsy-snapshots</id>
+            <url>https://repo.repsy.io/mvn/techsenger/snapshots</url>
+            <releases>
+                <enabled>false</enabled>
+            </releases>
+            <snapshots>
+                <enabled>true</enabled>
+                <updatePolicy>always</updatePolicy>
+            </snapshots>
+        </repository>
+    </repositories>
+
     <dependencyManagement>
         <dependencies>
 
+            <!--### ANNOTATIONS ###-->
+            <dependency>
+                <groupId>com.techsenger.annotations</groupId>
+                <artifactId>annotations</artifactId>
+                <version>${annotations.version}</version>
+            </dependency>
+
             <!--### TOOLKIT ###-->
+            <dependency>
+                <groupId>com.techsenger.toolkit</groupId>
+                <artifactId>toolkit-annotations</artifactId>
+                <version>${toolkit.version}</version>
+            </dependency>
             <dependency>
                 <groupId>com.techsenger.toolkit</groupId>
                 <artifactId>toolkit-core</artifactId>
@@ -177,11 +206,11 @@
                 <version>${tabpanepro.version}</version>
             </dependency>
 
-            <!--### MVVM4FX ###-->
+            <!--### PATTERNFX ###-->
             <dependency>
-                <groupId>com.techsenger.mvvm4fx</groupId>
-                <artifactId>mvvm4fx-core</artifactId>
-                <version>${mvvm4fx.version}</version>
+                <groupId>com.techsenger.patternfx</groupId>
+                <artifactId>patternfx-core</artifactId>
+                <version>${patternfx.version}</version>
             </dependency>
 
             <!--### TABSHELL ###-->
@@ -197,7 +226,12 @@
             </dependency>
             <dependency>
                 <groupId>com.techsenger.tabshell</groupId>
-                <artifactId>tabshell-tabs</artifactId>
+                <artifactId>tabshell-layout</artifactId>
+                <version>${tabshell.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.techsenger.tabshell</groupId>
+                <artifactId>tabshell-shared</artifactId>
                 <version>${tabshell.version}</version>
             </dependency>
             <dependency>
@@ -341,6 +375,11 @@
                 <artifactId>controlsfx</artifactId>
                 <version>${controlsfx.version}</version>
             </dependency>
+            <dependency>
+                <groupId>io.github.mkpaz</groupId>
+                <artifactId>devtoolsfx-connector</artifactId>
+                <version>${devtoolsfx.version}</version>
+            </dependency>
             <!-- fx theme library -->
             <dependency>
                 <groupId>io.github.mkpaz</groupId>
@@ -435,6 +474,11 @@
                 <groupId>com.google.code.findbugs</groupId>
                 <artifactId>jsr305</artifactId>
                 <version>${findbugs.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>commons-validator</groupId>
+                <artifactId>commons-validator</artifactId>
+                <version>${commons.validator.version}</version>
             </dependency>
 
             <!--### CLI ###-->
