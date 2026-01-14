@@ -85,6 +85,7 @@
         <jpa.version>3.1.0</jpa.version>
         <hibernate.orm.version>6.4.0.Final</hibernate.orm.version>
         <bytebuddy.version>1.12.9</bytebuddy.version>
+        <jmh.version>1.37</jmh.version>
         <junit.platform.version>1.10.2</junit.platform.version>
         <junit.jupiter.version>5.10.2</junit.jupiter.version>
         <assertj.version>3.25.3</assertj.version>
@@ -595,6 +596,18 @@
                 <groupId>org.apache.logging.log4j</groupId>
                 <artifactId>log4j-jcl</artifactId>
                 <version>${log4j.version}</version>
+            </dependency>
+
+            <!--### BENCHMARK ###-->
+            <dependency>
+                <groupId>org.openjdk.jmh</groupId>
+                <artifactId>jmh-core</artifactId>
+                <version>${jmh.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.openjdk.jmh</groupId>
+                <artifactId>jmh-generator-annprocess</artifactId>
+                <version>${jmh.version}</version>
             </dependency>
 
             <!--### JUNIT ###-->
