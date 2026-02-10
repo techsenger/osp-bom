@@ -216,6 +216,11 @@
             </dependency>
             <dependency>
                 <groupId>com.techsenger.patternfx</groupId>
+                <artifactId>patternfx-mvp</artifactId>
+                <version>${patternfx.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.techsenger.patternfx</groupId>
                 <artifactId>patternfx-mvvm</artifactId>
                 <version>${patternfx.version}</version>
             </dependency>
