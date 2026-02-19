@@ -59,7 +59,7 @@
         <richtextfx.version>0.11.7</richtextfx.version>
         <flowless.version>0.7.4</flowless.version>
         <atlantafx.version>2.1.0</atlantafx.version>
-        <devtoolsfx.version>1.0.1</devtoolsfx.version>
+        <connectorfx.version>1.0.0-SNAPSHOT</connectorfx.version>
         <ikonli.version>12.3.1</ikonli.version>
         <twelvemonkeys.version>3.13.0</twelvemonkeys.version>
         <controlsfx.version>11.1.1</controlsfx.version>
@@ -207,6 +207,13 @@
                 <groupId>com.techsenger.tabpanepro</groupId>
                 <artifactId>tabpanepro-core</artifactId>
                 <version>${tabpanepro.version}</version>
+            </dependency>
+
+            <!--### CONNECTORFX ###-->
+            <dependency>
+                <groupId>com.techsenger.connectorfx</groupId>
+                <artifactId>connectorfx</artifactId>
+                <version>${connectorfx.version}</version>
             </dependency>
 
             <!--### PATTERNFX ###-->
@@ -392,11 +399,6 @@
                 <groupId>org.controlsfx</groupId>
                 <artifactId>controlsfx</artifactId>
                 <version>${controlsfx.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>io.github.mkpaz</groupId>
-                <artifactId>devtoolsfx-connector</artifactId>
-                <version>${devtoolsfx.version}</version>
             </dependency>
             <!-- fx theme library -->
             <dependency>
