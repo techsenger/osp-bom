@@ -294,6 +294,16 @@
                 <artifactId>tabshell-icons</artifactId>
                 <version>${tabshell.version}</version>
             </dependency>
+            <dependency>
+                <groupId>com.techsenger.tabshell</groupId>
+                <artifactId>tabshell-web</artifactId>
+                <version>${tabshell.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.techsenger.tabshell</groupId>
+                <artifactId>tabshell-devtools</artifactId>
+                <version>${tabshell.version}</version>
+            </dependency>
 
             <!--### JEDITERMFX ###-->
             <dependency>
