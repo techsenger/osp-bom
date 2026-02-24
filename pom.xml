@@ -232,11 +232,6 @@
                 <artifactId>patternfx-mvvm</artifactId>
                 <version>${patternfx.version}</version>
             </dependency>
-            <dependency>
-                <groupId>com.techsenger.patternfx</groupId>
-                <artifactId>patternfx-mvvmx</artifactId>
-                <version>${patternfx.version}</version>
-            </dependency>
 
             <!--### TABSHELL ###-->
             <dependency>
