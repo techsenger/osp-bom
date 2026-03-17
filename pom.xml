@@ -87,6 +87,8 @@
         <hibernate.orm.version>6.4.0.Final</hibernate.orm.version>
         <bytebuddy.version>1.12.9</bytebuddy.version>
         <jmh.version>1.37</jmh.version>
+        <errorprone.version>2.48.0</errorprone.version>
+        <nullaway.version>0.13.1</nullaway.version>
         <junit.platform.version>1.10.2</junit.platform.version>
         <junit.jupiter.version>5.10.2</junit.jupiter.version>
         <assertj.version>3.25.3</assertj.version>
@@ -603,6 +605,23 @@
                 <groupId>org.openjdk.jmh</groupId>
                 <artifactId>jmh-generator-annprocess</artifactId>
                 <version>${jmh.version}</version>
+            </dependency>
+
+            <!-- ### STATIC ANALYSIS ### -->
+            <dependency>
+                <groupId>com.google.errorprone</groupId>
+                <artifactId>error_prone_core</artifactId>
+                <version>${errorprone.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.google.errorprone</groupId>
+                <artifactId>error_prone_annotations</artifactId>
+                <version>${errorprone.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.uber.nullaway</groupId>
+                <artifactId>nullaway</artifactId>
+                <version>${nullaway.version}</version>
             </dependency>
 
             <!--### JUNIT ###-->
