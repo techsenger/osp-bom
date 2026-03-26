@@ -150,6 +150,11 @@
                 <artifactId>toolkit-rmi</artifactId>
                 <version>${toolkit.version}</version>
             </dependency>
+            <dependency>
+                <groupId>com.techsenger.toolkit</groupId>
+                <artifactId>toolkit-http</artifactId>
+                <version>${toolkit.version}</version>
+            </dependency>
 
             <!--### ALPHA ###-->
             <dependency>
