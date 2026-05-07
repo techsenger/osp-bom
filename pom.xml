@@ -53,7 +53,7 @@
         <reposium.version>1.1.0-SNAPSHOT</reposium.version>
         <patternfx.version>2.0.0-SNAPSHOT</patternfx.version>
         <tabshell.version>2.0.0-SNAPSHOT</tabshell.version>
-        <alpha.version>1.0.0-SNAPSHOT</alpha.version>
+        <weaverbird.version>1.0.0-SNAPSHOT</weaverbird.version>
 
         <javafx.version>19.0.2.1</javafx.version>
         <richtextfx.version>0.11.7</richtextfx.version>
@@ -156,21 +156,16 @@
                 <version>${toolkit.version}</version>
             </dependency>
 
-            <!--### ALPHA ###-->
+            <!--### WEAVERBIRD ###-->
             <dependency>
-                <groupId>com.techsenger.alpha</groupId>
-                <artifactId>alpha-api</artifactId>
-                <version>${alpha.version}</version>
+                <groupId>com.techsenger.weaverbird</groupId>
+                <artifactId>weaverbird-core</artifactId>
+                <version>${weaverbird.version}</version>
             </dependency>
             <dependency>
-                <groupId>com.techsenger.alpha</groupId>
-                <artifactId>alpha-spi</artifactId>
-                <version>${alpha.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.techsenger.alpha.console</groupId>
-                <artifactId>alpha-console-gui</artifactId>
-                <version>${alpha.version}</version>
+                <groupId>com.techsenger.weaverbird</groupId>
+                <artifactId>weaverbird-gui</artifactId>
+                <version>${weaverbird.version}</version>
             </dependency>
 
             <!--### ANSI4J ###-->
