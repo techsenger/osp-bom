@@ -167,6 +167,21 @@
                 <artifactId>weaverbird-gui</artifactId>
                 <version>${weaverbird.version}</version>
             </dependency>
+            <dependency>
+                <groupId>com.techsenger.weaverbird.net</groupId>
+                <artifactId>weaverbird-net-client</artifactId>
+                <version>${weaverbird.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.techsenger.weaverbird.net</groupId>
+                <artifactId>weaverbird-net-shared</artifactId>
+                <version>${weaverbird.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.techsenger.weaverbird.net</groupId>
+                <artifactId>weaverbird-net-server</artifactId>
+                <version>${weaverbird.version}</version>
+            </dependency>
 
             <!--### ANSI4J ###-->
             <dependency>
