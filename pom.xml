@@ -78,6 +78,7 @@
         <jansi.version>2.4.1</jansi.version>
         <jcommander.version>1.78</jcommander.version>
         <asciitable.version>0.3.2</asciitable.version>
+        <ascii.themes.version>0.0.1</ascii.themes.version>
         <skb-interfaces.version>0.0.1</skb-interfaces.version>
         <st4.version>4.0.8</st4.version>
         <jaxb.version>4.0.0</jaxb.version>
