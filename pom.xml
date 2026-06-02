@@ -73,6 +73,7 @@
         <commons.validator.version>1.10.1</commons.validator.version>
         <findbugs.version>3.0.2</findbugs.version>
         <gson.version>2.12.1</gson.version>
+        <ph.css.version>7.0.1</ph.css.version>
         <jline.version>3.30.9</jline.version>
         <jna.version>5.17.0</jna.version>
         <jansi.version>2.4.1</jansi.version>
@@ -338,11 +339,18 @@
                 <version>${hibernate.orm.version}</version>
             </dependency>
 
-            <!--### DATA PARSING ###-->
+            <!--### DATA ###-->
             <dependency>
                 <groupId>com.google.code.gson</groupId>
                 <artifactId>gson</artifactId>
                 <version>${gson.version}</version>
+            </dependency>
+
+            <!--### WEB ###-->
+            <dependency>
+                <groupId>com.helger</groupId>
+                <artifactId>ph-css</artifactId>
+                <version>${ph.css.version}</version>
             </dependency>
 
             <!--### TEMPLATES ###-->
