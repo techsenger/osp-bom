@@ -52,7 +52,7 @@
         <tabpanepro.version>2.0.0-SNAPSHOT</tabpanepro.version>
         <reposium.version>1.1.0-SNAPSHOT</reposium.version>
         <patternfx.version>2.0.0-SNAPSHOT</patternfx.version>
-        <tabshell.version>2.0.0-SNAPSHOT</tabshell.version>
+        <shellfx.version>2.0.0-SNAPSHOT</shellfx.version>
         <weaverbird.version>1.0.0-SNAPSHOT</weaverbird.version>
 
         <javafx.version>19.0.2.1</javafx.version>
@@ -256,44 +256,44 @@
 
             <!--### TABSHELL ###-->
             <dependency>
-                <groupId>com.techsenger.tabshell</groupId>
-                <artifactId>tabshell-material</artifactId>
-                <version>${tabshell.version}</version>
+                <groupId>com.techsenger.shellfx</groupId>
+                <artifactId>shellfx-material</artifactId>
+                <version>${shellfx.version}</version>
             </dependency>
             <dependency>
-                <groupId>com.techsenger.tabshell</groupId>
-                <artifactId>tabshell-core</artifactId>
-                <version>${tabshell.version}</version>
+                <groupId>com.techsenger.shellfx</groupId>
+                <artifactId>shellfx-core</artifactId>
+                <version>${shellfx.version}</version>
             </dependency>
             <dependency>
-                <groupId>com.techsenger.tabshell</groupId>
-                <artifactId>tabshell-layout</artifactId>
-                <version>${tabshell.version}</version>
+                <groupId>com.techsenger.shellfx</groupId>
+                <artifactId>shellfx-layout</artifactId>
+                <version>${shellfx.version}</version>
             </dependency>
             <dependency>
-                <groupId>com.techsenger.tabshell</groupId>
-                <artifactId>tabshell-shared</artifactId>
-                <version>${tabshell.version}</version>
+                <groupId>com.techsenger.shellfx</groupId>
+                <artifactId>shellfx-shared</artifactId>
+                <version>${shellfx.version}</version>
             </dependency>
             <dependency>
-                <groupId>com.techsenger.tabshell</groupId>
-                <artifactId>tabshell-storage</artifactId>
-                <version>${tabshell.version}</version>
+                <groupId>com.techsenger.shellfx</groupId>
+                <artifactId>shellfx-storage</artifactId>
+                <version>${shellfx.version}</version>
             </dependency>
             <dependency>
-                <groupId>com.techsenger.tabshell</groupId>
-                <artifactId>tabshell-dialogs</artifactId>
-                <version>${tabshell.version}</version>
+                <groupId>com.techsenger.shellfx</groupId>
+                <artifactId>shellfx-dialogs</artifactId>
+                <version>${shellfx.version}</version>
             </dependency>
             <dependency>
-                <groupId>com.techsenger.tabshell</groupId>
-                <artifactId>tabshell-icons</artifactId>
-                <version>${tabshell.version}</version>
+                <groupId>com.techsenger.shellfx</groupId>
+                <artifactId>shellfx-icons</artifactId>
+                <version>${shellfx.version}</version>
             </dependency>
             <dependency>
-                <groupId>com.techsenger.tabshell</groupId>
-                <artifactId>tabshell-devtools</artifactId>
-                <version>${tabshell.version}</version>
+                <groupId>com.techsenger.shellfx</groupId>
+                <artifactId>shellfx-devtools</artifactId>
+                <version>${shellfx.version}</version>
             </dependency>
 
             <!--### JEDITERMFX ###-->
