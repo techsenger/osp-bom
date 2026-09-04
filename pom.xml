@@ -82,6 +82,7 @@
         <asciitable.version>0.3.2</asciitable.version>
         <ascii.themes.version>0.0.1</ascii.themes.version>
         <tika.version>3.3.1</tika.version>
+        <dirs.version>26</dirs.version>
         <commons.io.version>2.22.0</commons.io.version>
         <jimfs.version>1.3.2</jimfs.version>
         <commons.lang.version>3.8.1</commons.lang.version>
@@ -545,6 +546,11 @@
                 <groupId>com.google.jimfs</groupId>
                 <artifactId>jimfs</artifactId>
                 <version>${jimfs.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>dev.dirs</groupId>
+                <artifactId>directories</artifactId>
+                <version>${dirs.version}</version>
             </dependency>
 
             <!--### CLI ###-->
