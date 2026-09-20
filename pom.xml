@@ -68,7 +68,7 @@
         <mvn.version>3.8.1</mvn.version>
         <maven.plugin-tools.version>3.6.2</maven.plugin-tools.version>
         <maven.resolver.version>1.6.2</maven.resolver.version>
-        <plantuml.version>1.2025.0</plantuml.version>
+        <plantuml.version>1.2026.8</plantuml.version>
         <guava.version>33.4.0-jre</guava.version>
         <findbugs.version>3.0.2</findbugs.version>
         <gson.version>2.12.1</gson.version>
