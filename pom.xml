@@ -46,6 +46,7 @@
 
         <annotations.version>1.0.0-SNAPSHOT</annotations.version>
         <toolkit.version>1.2.0-SNAPSHOT</toolkit.version>
+        <drivekit.version>1.0.0-SNAPSHOT</drivekit.version>
         <jeditermfx.version>1.2.0-SNAPSHOT</jeditermfx.version>
         <ansi4j.version>2.0.0</ansi4j.version>
         <stagepro.version>1.1.0</stagepro.version>
@@ -163,6 +164,13 @@
                 <groupId>com.techsenger.toolkit</groupId>
                 <artifactId>toolkit-http</artifactId>
                 <version>${toolkit.version}</version>
+            </dependency>
+
+            <!--### DRIVEKIT ###-->
+            <dependency>
+                <groupId>com.techsenger.drivekit</groupId>
+                <artifactId>drivekit-core</artifactId>
+                <version>${drivekit.version}</version>
             </dependency>
 
             <!--### WEAVERBIRD ###-->
