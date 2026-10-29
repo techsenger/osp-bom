@@ -68,7 +68,7 @@
         <log4j.version>2.21.1</log4j.version>
         <mvn.version>3.8.1</mvn.version>
         <maven.plugin-tools.version>3.6.2</maven.plugin-tools.version>
-        <maven.resolver.version>1.6.2</maven.resolver.version>
+        <maven.resolver.version>2.0.24</maven.resolver.version>
         <plantuml.version>1.2026.8</plantuml.version>
         <guava.version>33.4.0-jre</guava.version>
         <findbugs.version>3.0.2</findbugs.version>
@@ -469,11 +469,6 @@
                 <version>${mvn.version}</version>
             </dependency>
             <dependency>
-                <groupId>org.apache.maven</groupId>
-                <artifactId>maven-resolver-provider</artifactId>
-                <version>${mvn.version}</version>
-            </dependency>
-            <dependency>
                 <groupId>org.apache.maven.plugin-tools</groupId>
                 <artifactId>maven-plugin-annotations</artifactId>
                 <version>${maven.plugin-tools.version}</version>
@@ -489,29 +484,14 @@
                 <artifactId>maven-resolver-api</artifactId>
                 <version>${maven.resolver.version}</version>
             </dependency>
+            <!--
+                Ready-made wiring of RepositorySystem without a DI container. It transitively brings the rest of
+                resolver (impl, spi, connector-basic, transports, etc.) and the Maven 3 model/provider, so they
+                need not be listed separately.
+            -->
             <dependency>
                 <groupId>org.apache.maven.resolver</groupId>
-                <artifactId>maven-resolver-impl</artifactId>
-                <version>${maven.resolver.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.apache.maven.resolver</groupId>
-                <artifactId>maven-resolver-spi</artifactId>
-                <version>${maven.resolver.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.apache.maven.resolver</groupId>
-                <artifactId>maven-resolver-connector-basic</artifactId>
-                <version>${maven.resolver.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.apache.maven.resolver</groupId>
-                <artifactId>maven-resolver-transport-file</artifactId>
-                <version>${maven.resolver.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.apache.maven.resolver</groupId>
-                <artifactId>maven-resolver-transport-http</artifactId>
+                <artifactId>maven-resolver-supplier-mvn3</artifactId>
                 <version>${maven.resolver.version}</version>
             </dependency>
 
