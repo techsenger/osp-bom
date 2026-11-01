@@ -47,6 +47,7 @@
         <annotations.version>1.0.0-SNAPSHOT</annotations.version>
         <toolkit.version>1.2.0-SNAPSHOT</toolkit.version>
         <drivekit.version>1.0.0-SNAPSHOT</drivekit.version>
+        <fontjars.version>1.0.0-SNAPSHOT</fontjars.version>
         <jeditermfx.version>1.2.0-SNAPSHOT</jeditermfx.version>
         <ansi4j.version>2.0.0</ansi4j.version>
         <stagepro.version>1.1.0</stagepro.version>
@@ -171,6 +172,28 @@
                 <groupId>com.techsenger.drivekit</groupId>
                 <artifactId>drivekit-core</artifactId>
                 <version>${drivekit.version}</version>
+            </dependency>
+
+            <!--### FONTJARS ###-->
+            <dependency>
+                <groupId>com.techsenger.fontjars</groupId>
+                <artifactId>fontjars-inter</artifactId>
+                <version>${fontjars.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.techsenger.fontjars</groupId>
+                <artifactId>fontjars-jetbrains-mono</artifactId>
+                <version>${fontjars.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.techsenger.fontjars</groupId>
+                <artifactId>fontjars-mdi</artifactId>
+                <version>${fontjars.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.techsenger.fontjars</groupId>
+                <artifactId>fontjars-techsenger-icons</artifactId>
+                <version>${fontjars.version}</version>
             </dependency>
 
             <!--### WEAVERBIRD ###-->
