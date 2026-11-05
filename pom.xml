@@ -290,7 +290,12 @@
                 <version>${patternfx.version}</version>
             </dependency>
 
-            <!--### TABSHELL ###-->
+            <!--### SHELLFX ###-->
+            <dependency>
+                <groupId>com.techsenger.shellfx</groupId>
+                <artifactId>shellfx-base</artifactId>
+                <version>${shellfx.version}</version>
+            </dependency>
             <dependency>
                 <groupId>com.techsenger.shellfx</groupId>
                 <artifactId>shellfx-material</artifactId>
